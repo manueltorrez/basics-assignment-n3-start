@@ -1,0 +1,9 @@
+<button
+  class="btn btn-primary"
+  (click)="setToggle()"
+  >Display Details</button>
+<p *ngIf="toggle">Here come dat boi</p>
+<p *ngFor="let number of numbers"
+   [ngClass]="{hai:number>=5}"
+   [ngStyle]="{backgroundColor: number>=5 ? 'blue':''}"
+    >{{ number }}</p>
